@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: odoo
+    env: docker
+    plan: free
+    envVars:
+      - key: HOST
+        value: dpg-d1kglv6r433s73cibfi0-a
+      - key: USER
+        value: odoo_user1
+      - key: PASSWORD
+        value: Qz5shgCTx2Voa7WVf9QLFs3ZNnu7w57K
+      - key: PORT
+        value: "5432"
+      - key: DB_NAME
+        value: odoo_7oyi
