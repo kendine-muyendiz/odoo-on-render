@@ -3,6 +3,8 @@ services:
     name: odoo
     env: docker
     plan: free
+    ports:
+      - port: 8069
     envVars:
       - key: HOST
         value: dpg-d1kglv6r433s73cibfi0-a
