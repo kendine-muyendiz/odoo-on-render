@@ -3,6 +3,7 @@ services:
     name: odoo
     env: docker
     plan: free
+    autoDeploy: true
     ports:
       - port: 8069
     envVars:
@@ -16,3 +17,5 @@ services:
         value: "5432"
       - key: DB_NAME
         value: odoo_7oyi
+    startCommand: >
+      odoo -i base --db_host=$HOST --db_port=$PORT --db_user=$USER --db_password=$PASSWORD --db_name=$DB_NAME --without-demo=all
